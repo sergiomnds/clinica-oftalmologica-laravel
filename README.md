@@ -4,9 +4,9 @@
 
 <h1 align="center">👓 Clínica Oftalmológica – Ophtamuls</h1>
 
-Projeto em Laravel desenvolvido para a disciplina de Processo de Desenvolvimento de Software, juntamente com [Allan França](https://github.com/Allanfd12) e [Fernanda Barbosa](https://github.com/fernandabmf) utilizando de várias tecnologias complementares. E o design da aplicação foi criado por [Malu Miranda Fróes](https://github.com/malumirandafr) utilizando do Figma.
+Projeto em Laravel desenvolvido para a disciplina de Processo de Desenvolvimento de Software, juntamente com [Allan França](https://github.com/Allanfd12) e [Fernanda Barbosa](https://github.com/fernandabmf), utilizando de várias tecnologias complementares. E o design da aplicação foi criado por [Malu Miranda Fróes](https://github.com/malumirandafr) pelo Figma.
 
-O sistema "Ophtamuls" consiste em uma aplicação Web integrada com Banco de Dados (MySQL) que permite gerenciar de forma completa (Criar, Editar, Atualizar e Excluir) Consultas guardando dados como data e hora da consulta agenda, assim como gerenciar os Médicos e Pacientes que estão envolvidos em cada uma das consultas, e seus respectivos dados. Além disso, possui um sistema de login, e também é possível gerenciar os usuários do sistema.
+O sistema "Ophtamuls" consiste em uma aplicação Web integrada com Banco de Dados (MySQL) que permite gerenciar de forma completa (Criar, Editar, Atualizar e Excluir) Consultas guardando dados como data e hora da consulta agenda, assim como gerenciar os Médicos e Pacientes que estão envolvidos em cada uma das consultas, e seus respectivos dados. Além disso, possui um sistema de login com email e senha, e também é possível gerenciar os usuários do sistema.
 
 Abaixo está descrito em detalhes o objetivo da aplicação e como as diferentes linguagens foram utilizadas em conjunto para desenvolver a aplicação completa. Para ver imagens do produto final do projeto, vá até a Galeria.
 
@@ -39,3 +39,14 @@ Além disso, o jQuery também foi utilizado para fazer as 'inputs masks' do sist
 A aplicação consta com um banco de dados relacional em MySQL, com tabelas para 'Consultas', 'Médicos', Usuários' e 'Pacientes'. As tabelas possuem relacionamentos entre si. A tabela 'Consultas' recebe o 'id' de um paciente e de um médico, e a tabela 'Médicos' recebe o 'id' de um usuário, já que todo médico cadastrado utilizará o sistema, mas também nem todo usuário será um médico, como por exemplo uma atendente da clínica.
 
 <h2>📷 Galeria</h2>
+
+![Página de Login](https://github.com/sergiomnds/clinica-oftalmologica-laravel/assets/85349959/d7a58bd0-2c7f-417a-ab66-7455b4f588e6)
+![Página Home](https://github.com/sergiomnds/clinica-oftalmologica-laravel/assets/85349959/45c97eae-3417-4d1b-a022-3fcc51ea7645)
+![Listagem de PACIENTE](https://github.com/sergiomnds/clinica-oftalmologica-laravel/assets/85349959/897b5e70-9fed-4db0-9413-0901ae89372a)
+![Pesquisar de PACIENTE](https://github.com/sergiomnds/clinica-oftalmologica-laravel/assets/85349959/c8e00dfc-6bfb-4e98-9601-74963762680c)
+![Criar MÉDICO](https://github.com/sergiomnds/clinica-oftalmologica-laravel/assets/85349959/a61dce6f-924d-4d84-a456-f5ecd2c687f7)
+![Editar PRONTUÁRIO](https://github.com/sergiomnds/clinica-oftalmologica-laravel/assets/85349959/e686f1fc-b273-40ea-8c04-573261ce1ed2)
+![Visualizar CONSULTA](https://github.com/sergiomnds/clinica-oftalmologica-laravel/assets/85349959/9fe16ae0-1ebf-4a0d-a880-8bba73841234)
+![Excluir USUÁRIO](https://github.com/sergiomnds/clinica-oftalmologica-laravel/assets/85349959/f7b43030-1492-4be6-bb8b-211fffa32c75)
+
+
