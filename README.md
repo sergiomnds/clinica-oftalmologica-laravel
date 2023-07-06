@@ -6,7 +6,7 @@
 
 Projeto em Laravel desenvolvido para a disciplina de Processo de Desenvolvimento de Software, juntamente com [Allan França](https://github.com/Allanfd12) e [Fernanda Barbosa](https://github.com/fernandabmf), utilizando de várias tecnologias complementares. E o design da aplicação foi criado por [Malu Miranda Fróes](https://github.com/malumirandafr) pelo Figma.
 
-O sistema "Ophtamuls" consiste em uma aplicação Web integrada com Banco de Dados (MySQL) que permite gerenciar de forma completa (Criar, Editar, Atualizar e Excluir) Consultas guardando dados como data e hora da consulta agenda, assim como gerenciar os Médicos e Pacientes que estão envolvidos em cada uma das consultas, e seus respectivos dados. Além disso, possui um sistema de login com email e senha, e também é possível gerenciar os usuários do sistema.
+O sistema "Ophtamuls" consiste em uma aplicação Web integrada com Banco de Dados (MySQL) que permite gerenciar de forma completa (Criar, Editar, Atualizar e Excluir) Consultas guardando dados como data e hora da consulta agenda, assim como gerenciar os Médicos e Pacientes que estão envolvidos em cada uma das consultas, e seus respectivos dados. Outra funcionalidade é de gerenciar os prontuários para os pacientes cadastrados no sistema. E além disso, possui um sistema de login com email e senha, sendo também possível gerenciar os usuários do sistema.
 
 Abaixo está descrito em detalhes o objetivo da aplicação e como as diferentes linguagens foram utilizadas em conjunto para desenvolver a aplicação completa. Para ver imagens do produto final do projeto, vá até a Galeria.
 
@@ -36,7 +36,9 @@ Além disso, o jQuery também foi utilizado para fazer as 'inputs masks' do sist
 
 <h3><img width=20 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" /> MySQL</h3>
 
-A aplicação consta com um banco de dados relacional em MySQL, com tabelas para 'Consultas', 'Médicos', Usuários' e 'Pacientes'. As tabelas possuem relacionamentos entre si. A tabela 'Consultas' recebe o 'id' de um paciente e de um médico, e a tabela 'Médicos' recebe o 'id' de um usuário, já que todo médico cadastrado utilizará o sistema, mas também nem todo usuário será um médico, como por exemplo uma atendente da clínica.
+A aplicação consta com um banco de dados relacional em MySQL, com tabelas para 'Consultas', 'Médicos', Usuários', 'Pacientes' e 'Prontuários'. As tabelas possuem relacionamentos entre si. A tabela 'Consultas' recebe o 'id' de um paciente e de um médico, e a tabela 'Médicos' recebe o 'id' de um usuário, já que todo médico cadastrado utilizará o sistema, mas também nem todo usuário será um médico, como por exemplo uma atendente da clínica. Já a tabela 'Prontuários' recebe o 'id' do Paciente do qual está trazendo as informações sobre.
+
+Além disso, durante o deletar de alguma das tabelas, é feito o SoftDelete para que não se perca as informações do banco de dados e as tenha como histórico.
 
 <h2>📷 Galeria</h2>
 
@@ -48,5 +50,3 @@ A aplicação consta com um banco de dados relacional em MySQL, com tabelas para
 ![Editar PRONTUÁRIO](https://github.com/sergiomnds/clinica-oftalmologica-laravel/assets/85349959/e686f1fc-b273-40ea-8c04-573261ce1ed2)
 ![Visualizar CONSULTA](https://github.com/sergiomnds/clinica-oftalmologica-laravel/assets/85349959/9fe16ae0-1ebf-4a0d-a880-8bba73841234)
 ![Excluir USUÁRIO](https://github.com/sergiomnds/clinica-oftalmologica-laravel/assets/85349959/f7b43030-1492-4be6-bb8b-211fffa32c75)
-
-
